@@ -80,7 +80,7 @@ if __name__ == '__main__':
 	# in an SQLite3 db at userdir/Default/Cookies.
 	o = webdriver.ChromeOptions()
 	o.add_argument("--user-data-dir=userdir")
-	c = webdriver.Chrome(chrome_options=o)
+	c = webdriver.Chrome('/usr/bin/google-chrome', chrome_options=o) # what a hack... 
 
 	# get the goods from Earl
 	c.get(earl)
