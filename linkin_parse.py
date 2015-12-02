@@ -14,6 +14,7 @@ def getCurJob(soup):
 	p = soup.find_all('p', class_='title')
 	return tx(p)
 
+# <my own shamelessly reused code from glvssdoor-scrvper>
 def decode(thing):
 	try:
 		return u''.join(thing).encode(u'utf-8').strip()
@@ -27,7 +28,7 @@ def tx(t):
 	except (AttributeError, IndexError):
 		x = ''
 	return x
-
+# </my own shamelessly reused code from glvssdoor-scrvper>
 
 
 if __name__ == '__main__':
