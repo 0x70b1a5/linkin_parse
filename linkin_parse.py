@@ -1,12 +1,11 @@
-# linkinParkway
 # so titled because I've always despised the series of phonemes that make up the atrocious word 'LinkdIn' *shudder*
 # and also, avoiding SEO. :D 
-import os
 from bs4 import BeautifulSoup
 from selenium import webdriver
 import requests
 from lxml import html
 # --- #
+import os
 import csv
 import time
 
